@@ -1,6 +1,6 @@
  "use client";
 import { useEffect, useMemo, useState } from "react";
-import { supabase } from "../lib/supabase";
+import { supabase } from "./lib/supabase";
 import { LayoutDashboard, Package, ShoppingCart, Truck, Users, Wallet, BarChart3, Settings, Plus, Search, Bell, Menu, ArrowDownToLine, ArrowUpFromLine } from "lucide-react";
 
 type Product = { id:string; name:string; sku:string|null; category:string|null; stock:number; minimum_stock:number; purchase_price:number; sell_price:number; active:boolean };
